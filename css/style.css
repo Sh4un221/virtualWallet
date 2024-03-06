@@ -1,49 +1,60 @@
 @import url(variables.css);
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
 .header {
     display: grid;
     padding: 10px;
     background: red;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "logo burger";
 }
-.logo, .burger {
+
+.logo,
+.burger {
     width: 100%;
     height: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .logo {
     font-family: "SF-Pro-Text-Bold";
     grid-area: logo;
     gap: 10px;
 }
+
 .logo h1 {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+
 .burger {
     grid-area: burger;
     justify-content: flex-end;
 }
-.logo i, .burger i {
+
+.logo i,
+.burger i {
     font-size: 24px;
 }
+
 /***************************************/
 .container {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 25px;
 }
-.banner__publicidad{
+
+.banner__publicidad {
     width: 100%;
     height: 140px;
     background: #00388b;
@@ -51,14 +62,17 @@
     justify-content: center;
     align-items: center;
 }
-.banner__logo{
+
+.banner__logo {
     background: greenyellow;
 }
-.banner__logo img{
+
+.banner__logo img {
     /* padding: 15px; */
     height: 130px;
 }
-.banner__card{
+
+.banner__card {
     width: 98%;
     height: 130px;
     background: var(--color-ternario);
@@ -68,7 +82,8 @@
     justify-content: center;
     box-shadow: var(--color-shado-tranparent);
 }
-.banner__data{
+
+.banner__data {
     width: 80%;
     background: orange;
     display: flex;
@@ -78,13 +93,16 @@
     text-align: center;
     position: relative;
 }
-.banner__data strong{
+
+.banner__data strong {
     font-family: "SF-Pro-Text-Bold";
 }
-.banner__data small{
+
+.banner__data small {
     font-family: "SF-Pro-Text-Regular";
 }
-.banner__close{
+
+.banner__close {
     position: absolute;
     background: var(--color-primary);
     border: none;
@@ -95,7 +113,8 @@
     right: 10px;
     border-radius: 100%;
 }
-.banner__more{
+
+.banner__more {
     margin-top: 10px;
     border: none;
     border-radius: 10px;
@@ -105,38 +124,56 @@
     padding: 5px;
     background: var(--color-primary);
 }
+
 /****************************************************************/
-[data-card]::before{
+[data-card]::before {
     content: attr(data-card);
     color: var(--color-primary);
     font-family: "SF-Pro-Text-Bold";
 }
-.carusel {
-    width: 100%;
 
-
-}
-.carusel__title{
+.carusel__title {
     background: orange;
 }
-.carusel__card {
-    background: red;
-    
-    width: 100%;
-    overflow: hidden;
 
-}
-.carusel__container {
-    width: 100%;
-    background: green;
+.carusel__card {
+    width: 95vw;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     overflow-x: scroll;
-
+    margin: auto;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 0;
 }
+
 .carusel__img {
-background: url(../storage/img/card.svg), no-repeat;
-width: 100%;
-display: flex;
+    min-width: 55%;
+    min-height: 40vh;
+    background: url(../storage/img/card.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-ternario);
+}
+
+.carusel__img small {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.carusel__img img {
+    left: 20px;
+    bottom: 20px;
+    position: absolute;
+}
+.carusel__img h2 {
+    position: absolute;
+    color: var(--color-ternario);
 }
