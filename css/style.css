@@ -41,7 +41,7 @@
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-auto-rows: 1fr;
+    grid-gap: 25px;
 }
 .banner__publicidad{
     width: 100%;
@@ -110,4 +110,33 @@
     content: attr(data-card);
     color: var(--color-primary);
     font-family: "SF-Pro-Text-Bold";
+}
+.carusel {
+    width: 100%;
+
+
+}
+.carusel__title{
+    background: orange;
+}
+.carusel__card {
+    background: red;
+    
+    width: 100%;
+    overflow: hidden;
+
+}
+.carusel__container {
+    width: 100%;
+    background: green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+
+}
+.carusel__img {
+background: url(../storage/img/card.svg), no-repeat;
+width: 100%;
+display: flex;
 }
