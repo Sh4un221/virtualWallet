@@ -105,14 +105,20 @@ footer {
     flex-direction:row;
 }
 .container .creditcard{
-    width:50%;
+    width:35%;
     background: blue;
 }
 .container .creditcard img {
     object-fit: contain;
     max-width: 100%;
 }
-.container.text {
+.text {
     display: flex;
     flex-direction: column;
+    width: 65%;
+}
+.text button {
+    width: 25px;
+    border-radius: 100%;
+    background: col;
 }
