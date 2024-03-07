@@ -5,11 +5,12 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
 header {
     width: 100%;
     height: 25vh;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
 }
@@ -18,8 +19,13 @@ header div img {
     height: auto;
 }
 main  {
+    padding: 0 1em 0 1em;
     width: 100%;
     height: 50vh;
+    background: lightcoral;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 footer {
     width: 100%;
@@ -37,10 +43,76 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.buttons {
+  background: goldenrod;
+  width: 100%;
+  height: 10%; 
+}
+.buttons ul {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+.buttons ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.buttons ul li button {
+    border-radius: 30%;
+    background: transparent;
+    border: 1px solid;  
+    padding: 0.5em;
+}
+
 .graph {
     width: 100%;
+    height: 80%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+.graph .graphimg{
+    width:100%;
+    height: auto;
+    align-self: flex-start;
+    background: green;
+}
+.graph .graphimg img {
+    object-fit: contain;
+    max-width: 100%;
+}
+.graph .calendar {
+    height: 10%;
+    width: 100%;
+    height: auto;
+    align-self: flex-start;
+    background: orange;
+}
+.graph .calendar img {
+    object-fit: contain;
+    max-width: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background:var(--color-primary);
+    display: flex;
+    flex-direction:row;
+}
+.container .creditcard{
+    width:50%;
+    background: blue;
+}
+.container .creditcard img {
+    object-fit: contain;
+    max-width: 100%;
+}
+.container.text {
+    display: flex;
+    flex-direction: column;
 }
