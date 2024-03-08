@@ -5,10 +5,15 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
 
 .header {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -21,30 +26,30 @@
 main  {
     padding: 0 1em 0 1em;
     width: 100%;
-    height: 50vh;
-    background: lightcoral;
+    height: 55vh;
+    /* background: lightcoral; */
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 .footer {
     width: 100%;
-    height: 25vh;
+    height: 15vh;
 }
 .balance {
     background: var(--color-primary);
     border-radius: 100%;
     position: absolute;
     top: 3em;
-    width: 200px;
-    height: 200px;
+    width: 12.5em;
+    height: 12.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .buttons {
-  background: goldenrod;
+  /* background: goldenrod; */
   width: 100%;
   height: 10%; 
 }
@@ -62,10 +67,25 @@ main  {
     list-style: none;
 }
 .buttons ul li button {
-    border-radius: 30%;
+    border-radius: 3.65em;
+    padding: 1em 2.5em;
+}
+
+.assets {
+    background: var(--color-secundary);
+    color: var(--color-font);
+    border: 0.063em solid var(--color-secundary);
+}
+
+.debt {
     background: transparent;
-    border: 1px solid;  
-    padding: 0.5em;
+    color: var(--color-primary);
+    border: 0.063em solid var(--color-primary);
+}
+.income {
+    background: transparent;
+    color: var(--color-income);
+    border: 0.063em solid var(--color-income);
 }
 
 .graph {
@@ -80,7 +100,7 @@ main  {
     width:100%;
     height: auto;
     align-self: flex-start;
-    background: green;
+    /* background: green; */
 }
 .graph .graphimg img {
     object-fit: contain;
@@ -91,7 +111,7 @@ main  {
     width: 100%;
     height: auto;
     align-self: flex-start;
-    background: orange;
+    /* background: orange; */
 }
 .graph .calendar img {
     object-fit: contain;
@@ -100,20 +120,19 @@ main  {
 .container {
     width: 100%;
     height: 100%;
-    background:var(--color-primary);
+    background:var(--color-footer);
     display: flex;
     flex-direction:row;
 }
 .container .creditcard{
     display: flex;
     width:35%;
-    background: blue;
+    /* background: blue; */
     align-items: flex-end;
     justify-content: flex-end;
     padding-bottom: 1.563rem;
 }
 .container .creditcard img {
-
     object-fit: contain;
     max-width: 100%;
 }
@@ -122,10 +141,24 @@ main  {
     flex-direction: column;
     width: 65%;
 }
+.text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
 .text button {
-    width: 25px;
-    height: 25px;
+    position: absolute;
+    background: var(--color-primary);
+    border: none;
+    color: var(--color-font);
+    width: 1.563em;
+    height: 1.563em;
+    bottom: 6.25em;
+    right: 0.313em;
     border-radius: 100%;
-    align-self: flex-end;
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -5,4 +5,7 @@
 :root{
     --color-primary: #00DDA3;
     --color-secundary: #33404F;
+    --color-font:#fff;
+    --color-income:#B5C5C3;
+    --color-footer:#E1FFEF;
 }
