@@ -34,16 +34,12 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 20px 10px;
-    position: absolute;
-    /* z-index: 5; */
+    height: 100vh;
     bottom: 50px;
-    /* height: 60vh;
-    transition: height .3s ease-out; */
+
 }
 
-/* .profile__activities:active{
-    height: 85vh;
-} */
+
 
 .profile__balance {
     /* background: green; */
@@ -144,7 +140,7 @@ progress[value]::-moz-progress-bar {
     background: var(--color);
 }
 
-************************************************************************* .activities__title h3 {
+.activities__title h3 {
     background: olive;
     font-size: 1.4rem;
     text-transform: capitalize;
@@ -194,4 +190,73 @@ progress[value]::-moz-progress-bar {
 
 .activities__carusel__img h4 {
     bottom: 25px;
+}
+
+.transactions__title h3 {
+    /* background: olive; */
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-family: "SF-pro-Text-Bold";
+}
+
+.transactions__balance {
+    margin-top: .625em;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 28.9vh;
+    overflow-y: scroll;
+}
+
+.transactions__carucel {
+    /* background: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.transactions__description {
+    /* background: green; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.transactions__up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.transactions__dowm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secundary);
+}
+
+.transactions__up i {
+    font-size: 1.8em;
+}
+
+.transactions__down i {
+    font-size: 1.8em;
+}
+
+.transactions__description div p,
+.transactions__value p {
+    color: red;
+    font-family: "SF-Pro-Text-Semibold";
+    text-transform: capitalize;
+}
+
+.transactions__description div small,
+.transactions__value small {
+    color: red;
+    font-family: "SF-Pro-Text-Light";
+    color: var(--color-cuarto);
 }
