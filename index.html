@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,56 @@
     <link rel="shortcut icon" href="storage/img/icono0.svg" type="image/svg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body>
 
+</head>
+
+<body>
+    <div class="banner">
+        <img src="../storage/img/banner.svg" alt="">
+    </div>
+    <main class="profile">
+        <section class="profile__balance">
+            <article class="profile__titule">
+                <h3>Hi, Arthur</h3>
+                <p>here's your balance.</p>
+            </article>
+            <article class="profile__process">
+                <div class="profile__savings">
+                    <small>savings</small>
+                    <label for="savings"> <sub>$</sub> 15,615</label>
+                    <progress id="savings" max="100" value="80">
+                        << /progress>
+                </div>
+                <div class="profile__assets">
+                    <small>assets</small>
+                    <label for="assets"> <sub>$</sub> 9,615</label>
+                    <progress id="assets" max="100" value="40">
+                        << /progress>
+                </div>
+            </article>
+        </section>
+        <section class="profile__activities"">
+            <section class=" activities_carusel">
+            <article class="activities__title">
+                <h4>Activities</h4>
+            </article>
+            <article class="activities__carusel__card">
+                <div class="activities__carusel__img">
+                    <i class='bx bxs-user-account'></i>
+                    <h4>Account</h4>
+                </div>
+                <div class="activities__carusel__img">
+                    <i class='bx bxs-shield-plus'></i>
+                    <h4>Privacy</h4>
+                </div>
+                <div class="activities__carusel__img">
+                    <i class='bx bxs-help-circle'></i>
+                    <h4>Help</h4>
+                </div>
+            </article>
+        </section>
+        </section>
+    </main>
 </body>
+
 </html>
