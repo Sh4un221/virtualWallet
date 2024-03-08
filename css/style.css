@@ -20,7 +20,7 @@ body {
 }
 .header div img {
     width:99.9vw;
-    height: auto;
+    height: 80%;
 }
 main  {
     padding: 2em 1em 2em 1em;
@@ -123,6 +123,8 @@ main  {
     background:var(--color-footer);
     display: flex;
     flex-direction:row;
+    gap:.9em;
+    margin: 0 0;
 }
 .container .creditcard{
     display: flex;
@@ -149,17 +151,17 @@ main  {
     justify-content: flex-end;
 }
 .text button {
-    position: absolute;
+    position:absolute;
     background: var(--color-primary);
     border: none;
     color: var(--color-font);
     width: 1.563em;
     height: 1.563em;
-    bottom: 1.4em;
     right: 0.313em;
+    bottom: 2px;
+    top: 42em;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50em;
 }
