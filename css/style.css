@@ -201,3 +201,416 @@
     position: absolute;
     color: var(--color-ternario);
 }
+.profile__banner {
+    background: var(--color-secundary);
+    position: absolute;
+    z-index: -10;
+}
+
+.profile__banner img {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+}
+
+.profile {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px;
+    gap: 20px;
+}
+
+
+
+.profile__activities {
+    background: var(--color-ternario);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 10px;
+    height: 100vh;
+    bottom: 50px;
+
+}
+
+
+
+.profile__balance {
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.profile__titule {
+    /* background: blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    color: var(--color-ternario);
+}
+
+.profile__titule h3 {
+    font-size: 2em;
+    font-family: "SF-Pro-Text-Heavy.otf";
+}
+
+.profile__titule p {
+    font-size: 2.3em;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+.profile__process {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--color-ternario);
+}
+
+.profile__savings,
+.profile__assets {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.profile__savings small,
+.profile__assets small {
+    text-transform: uppercase;
+    font-size: .8em;
+    margin-bottom: 5px;
+}
+
+.profile__savings label,
+.profile__assets label {
+    font-family: "SF-Pro-Text-Semibold";
+    font-size: 1.3em;
+}
+
+.profile__savings progress,
+.profile__assets progress {
+    width: 100%;
+}
+
+.profile__savings progress[value] {
+    --color: var(--color-primary);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
+
+.profile__assets progress[value] {
+    --color: var(--color-cuarto);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: .5em;
+    border-radius: 10em;
+}
+
+.profile__savings progress[value]::-webkit-progress-bar,
+.profile__assets progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    height: .5em;
+    background: var(--background);
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+}
+
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+}
+
+.activities__title h3 {
+    background: olive;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-family: "SF-pro-Text-Bold";
+}
+
+
+
+.activities__carusel__card {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.activities__carusel__img {
+    min-width: 30%;
+    min-height: 19vh;
+    background: var(--color-ternario);
+    box-shadow: var(--color-shado-transparent);
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secundary);
+    margin: 15px 0;
+}
+
+.activities__carusel__img small,
+.activities__carusel__img h4 {
+    position: absolute;
+}
+
+.activities__carusel__img i {
+    font-size: 2.5em;
+}
+
+.activities__carusel__img h4 {
+    bottom: 25px;
+}
+
+.transactions__title h3 {
+    /* background: olive; */
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-family: "SF-pro-Text-Bold";
+}
+
+.transactions__balance {
+    margin-top: .625em;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 28.9vh;
+    overflow-y: scroll;
+}
+
+.transactions__carucel {
+    /* background: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.transactions__description {
+    /* background: green; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.transactions__up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+}
+
+.transactions__dowm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secundary);
+}
+
+.transactions__up i {
+    font-size: 1.8em;
+}
+
+.transactions__down i {
+    font-size: 1.8em;
+}
+
+.transactions__description div p,
+.transactions__value p {
+    color: red;
+    font-family: "SF-Pro-Text-Semibold";
+    text-transform: capitalize;
+}
+
+.transactions__description div small,
+.transactions__value small {
+    color: red;
+    font-family: "SF-Pro-Text-Light";
+    color: var(--color-cuarto);
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.balance__header {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+.balance__header div img {
+    width:99.9vw;
+    height: 80%;
+}
+main  {
+    padding: 2em 1em 2em 1em;
+    width: 100%;
+    height: 55vh;
+    /* background: lightcoral; */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.footer {
+    width: 100%;
+    height: 15vh;
+}
+.balance {
+    background: var(--color-primary);
+    border-radius: 100%;
+    position: absolute;
+    top: 5em;
+    width: 6.25em;
+    height: 6.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+.buttons {
+  /* background: goldenrod; */
+  width: 100%;
+  height: 10%; 
+}
+.buttons ul {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+.buttons ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.buttons ul li button {
+    border-radius: 3.65em;
+    padding: 1em 2.5em;
+}
+
+.assets {
+    background: var(--color-secundary);
+    color: var(--color-font);
+    border: 0.063em solid var(--color-secundary);
+}
+
+.debt {
+    background: transparent;
+    color: var(--color-primary);
+    border: 0.063em solid var(--color-primary);
+}
+.income {
+    background: transparent;
+    color: var(--color-cuarto);
+    border: 0.063em solid var(--color-cuarto);
+}
+
+.graph {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.graph .graphimg{
+    width:100%;
+    height: auto;
+    align-self: flex-start;
+    /* background: green; */
+}
+.graph .graphimg img {
+    object-fit: contain;
+    max-width: 100%;
+}
+.graph .calendar {
+    height: 10%;
+    width: 100%;
+    height: auto;
+    align-self: flex-start;
+    /* background: orange; */
+}
+.graph .calendar img {
+    object-fit: contain;
+    max-width: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background:var(--color-footer);
+    display: flex;
+    flex-direction:row;
+    gap:.9em;
+    margin: 0 0;
+}
+.container .creditcard{
+    display: flex;
+    width:35%;
+    /* background: blue; */
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 1.563rem;
+}
+.container .creditcard img {
+    object-fit: contain;
+    max-width: 100%;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+.text button {
+    position:absolute;
+    background: var(--color-primary);
+    border: none;
+    color: var(--color-font);
+    width: 1.563em;
+    height: 1.563em;
+    right: 0.313em;
+    bottom: 2px;
+    top: 42em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
