@@ -4,10 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SF-Pro-Text-Regular";
+    font-family: "Arimo", sans-serif;
+
 }
 .menu {
-    background: var(--color-secundary);
+
+    background: none;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -31,16 +33,18 @@
     color: var(--color-icon);
 }
 .menu ul li a i:hover {
-    color: var(--color-primary);
+    color: var(--color-secundary);
     transition: color 0.5s ease-in-out;
 }
 .header {
+    color: white;
     display: grid;
     padding: 10px;
-    /* background: red; */
+    background:none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "logo burger";
+
 }
 
 .logo,
@@ -53,7 +57,7 @@
 }
 
 .logo {
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Arimo", sans-serif;
     grid-area: logo;
     gap: 10px;
 }
@@ -79,6 +83,9 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 25px;
+    height: 100vh;
+    width: 100%;
+    background: none;
 }
 
 .banner__publicidad {
@@ -98,7 +105,7 @@
 .banner__card {
     width: 98%;
     height: 130px;
-    background: var(--color-ternario);
+    background: var(--color-secundary);
     overflow: hidden;
     border-radius: 20px;
     display: flex;
@@ -118,11 +125,11 @@
 }
 
 .banner__data strong {
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Arimo",sans-serif;
 }
 
 .banner__data small {
-    font-family: "SF-Pro-Text-Regular";
+    font-family: "Arimo",sans-serif;
 }
 
 .banner__close {
@@ -141,18 +148,19 @@
     margin-top: 10px;
     border: none;
     border-radius: 10px;
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Arimo",sans-serif;
     font-size: .8rem;
     color: var(--color-ternario);
     padding: 5px;
     background: var(--color-primary);
+    text-transform: capitalize;
 }
 
 /****************************************************************/
 [data-card]::before {
     content: attr(data-card);
     color: var(--color-primary);
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Arimo",sans-serif;
 }
 
 .carusel__title {
@@ -202,14 +210,14 @@
     color: var(--color-ternario);
 }
 .profile__banner {
-    background: var(--color-secundary);
+    background: var(--color-cuarto);
     position: absolute;
     z-index: -10;
 }
 
 .profile__banner img {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -224,12 +232,13 @@
 
 
 .profile__activities {
-    background: var(--color-ternario);
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(0, 0, 255, 0.1));
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 20px 10px;
-    height: 100vh;
+    height: 65vh;
     bottom: 50px;
+    color: white;
 
 }
 
@@ -254,12 +263,12 @@
 
 .profile__titule h3 {
     font-size: 2em;
-    font-family: "SF-Pro-Text-Heavy.otf";
+    font-family: "Arimo",sans-serif;
 }
 
 .profile__titule p {
     font-size: 2.3em;
-    font-family: "SF-Pro-Text-Regular";
+    font-family: "Arimo",sans-serif;
 }
 
 .profile__process {
@@ -268,7 +277,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    color: var(--color-ternario);
+    color: var(--color-primary);
 }
 
 .profile__savings,
@@ -287,7 +296,7 @@
 
 .profile__savings label,
 .profile__assets label {
-    font-family: "SF-Pro-Text-Semibold";
+
     font-size: 1.3em;
 }
 
@@ -297,14 +306,14 @@
 }
 
 .profile__savings progress[value] {
-    --color: var(--color-primary);
-    --background: var(--color-ternario);
+    --color: var(--color-ternario);
+    --background: white
     background: var(--background);
 }
 
 .profile__assets progress[value] {
-    --color: var(--color-cuarto);
-    --background: var(--color-ternario);
+    --color: var(--color-footer);
+    --background: white;
     background: var(--background);
 }
 
@@ -338,7 +347,7 @@ progress[value]::-moz-progress-bar {
     background: olive;
     font-size: 1.4rem;
     text-transform: capitalize;
-    font-family: "SF-pro-Text-Bold";
+    font-family: "Arimo",sans-serif;
 }
 
 
@@ -358,7 +367,7 @@ progress[value]::-moz-progress-bar {
 .activities__carusel__img {
     min-width: 30%;
     min-height: 19vh;
-    background: var(--color-ternario);
+    background: url(../storage/img/activitiesCard.svg);
     box-shadow: var(--color-shado-transparent);
     border-radius: 10px;
     background-size: contain;
@@ -369,7 +378,7 @@ progress[value]::-moz-progress-bar {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: var(--color-secundary);
+    color: var(--color-footer);
     margin: 15px 0;
 }
 
@@ -390,7 +399,7 @@ progress[value]::-moz-progress-bar {
     /* background: olive; */
     font-size: 1.4rem;
     text-transform: capitalize;
-    font-family: "SF-pro-Text-Bold";
+    font-family: "Arimo",sans-serif;
 }
 
 .transactions__balance {
@@ -444,19 +453,23 @@ progress[value]::-moz-progress-bar {
 .transactions__description div p,
 .transactions__value p {
     color: red;
-    font-family: "SF-Pro-Text-Semibold";
+    font-family: "Arimo",sans-serif;
     text-transform: capitalize;
 }
 
 .transactions__description div small,
 .transactions__value small {
     color: red;
-    font-family: "SF-Pro-Text-Light";
+    font-family: "Arimo",sans-serif;
     color: var(--color-cuarto);
 }
 body {
     display: grid;
     grid-template-columns: 1fr;
+    background: var(--color-footer);
+    width: 100%;
+    height: auto;
+    background: url(../storage/img/body.png);
 }
 
 .balance__header {
@@ -466,6 +479,7 @@ body {
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    background: none;
 }
 .balance__header div img {
     width:99.9vw;
@@ -479,23 +493,26 @@ main  {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    background: none;
 }
 .footer {
     width: 100%;
     height: 15vh;
 }
 .balance {
-    background: var(--color-primary);
-    border-radius: 100%;
+    background: none;
+    border-radius: 25px;
+    border: 4px solid var(--color-ternario);
     position: absolute;
     top: 5em;
-    width: 6.25em;
+    width: 16.2em;
     height: 6.25em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5em;
+    color: white;
 }
 .buttons {
   /* background: goldenrod; */
@@ -539,41 +556,30 @@ main  {
 
 .graph {
     width: 100%;
-    height: 80%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    background: none;
 }
 .graph .graphimg{
     width:100%;
-    height: auto;
-    align-self: flex-start;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+
     /* background: green; */
 }
 .graph .graphimg img {
     object-fit: contain;
-    max-width: 100%;
-}
-.graph .calendar {
-    height: 10%;
     width: 100%;
-    height: auto;
-    align-self: flex-start;
-    /* background: orange; */
-}
-.graph .calendar img {
-    object-fit: contain;
-    max-width: 100%;
 }
 .container {
     width: 100%;
     height: 100%;
-    background:var(--color-footer);
     display: flex;
     flex-direction:row;
     gap:.9em;
-    margin: 0 0;
 }
 .container .creditcard{
     display: flex;
