@@ -1,34 +1,10 @@
-@font-face {
-    font-family: "SF-Pro-Text-Regular";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
-}
-
-@font-face {
-    font-family: "SF-Pro-Text-Heavy";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Heavy.otf);
-}
-
-
-@font-face {
-    font-family: "SF-Pro-Text-Semibold";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Semibold.otf);
-}
-
-@font-face {
-    font-family: "SF-Pro-Text-Bold";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Bold.otf);
-}
-
-@font-face {
-    font-family: "SF-Pro-Text-Light";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 :root{
-    --color-primary: #00DDA3;
-    --color-secundary: #33404F;
-    --color-ternario: #fff;
-    --color-cuarto: #B5C5C3;
-    --color-footer:#E1FFEF;
+    --color-primary:#b7aea5;
+    --color-secundary: #f77014 ;
+    --color-ternario: #e33c08;
+    --color-cuarto: #433d3d;
+    --color-footer:#221d21;
     --color-shado-tranparent: 0px 0px 10px rgba(0, 0, 0, 0.416);
 }
 
